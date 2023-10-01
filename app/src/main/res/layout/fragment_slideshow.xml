@@ -39,6 +39,25 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView7"
+                android:layout_width="132dp"
+                android:layout_height="34dp"
+                android:focusable="false"
+                android:gravity="bottom"
+                android:text="Email:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextText5"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Address"
+                android:inputType="text"
+                android:text="JonWat641@Yahoo.ca" />
+
+            <TextView
                 android:id="@+id/textView4"
                 android:layout_width="127dp"
                 android:layout_height="31dp"
@@ -115,44 +134,6 @@
                 android:text="Male" />
 
             <TextView
-                android:id="@+id/textView7"
-                android:layout_width="132dp"
-                android:layout_height="34dp"
-                android:focusable="false"
-                android:gravity="bottom"
-                android:text="Email:"
-                android:textSize="15sp" />
-
-            <EditText
-                android:id="@+id/editTextText5"
-                android:layout_width="360dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Address"
-                android:inputType="text"
-                android:text="JonWat641@Yahoo.ca" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="134dp"
-                android:layout_height="33dp"
-                android:focusable="false"
-                android:gravity="bottom"
-                android:text="Weight"
-                android:textSize="15sp" />
-
-            <EditText
-                android:id="@+id/editTextText6"
-                android:layout_width="363dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="lbs"
-                android:inputType="text"
-                android:text="180" />
-
-            <TextView
                 android:id="@+id/textView9"
                 android:layout_width="140dp"
                 android:layout_height="33dp"
@@ -169,6 +150,19 @@
                 android:gravity="center"
                 android:inputType="text"
                 android:text="Weight Loss" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="362dp"
+                android:layout_height="40dp"
+                android:focusable="false"
+                android:clickable = "false"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:text="Save" />
 
         </LinearLayout>
     </ScrollView>

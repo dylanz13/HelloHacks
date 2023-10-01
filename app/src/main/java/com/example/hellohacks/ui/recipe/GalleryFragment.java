@@ -39,31 +39,8 @@ public class GalleryFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        ImageButton b1 = (ImageButton) view.findViewById(R.id.Recipe1);
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.everydayhealth.com/diet-nutrition/pescatarian-diet-food-list-meal-plan-benefits-risks-more/"));
-                startActivity(browserIntent);
-
-            }
-        });
-        ImageButton b2 = (ImageButton) view.findViewById(R.id.Recipe2);
-        b2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.eatwell101.com/corn-avocado-pasta-salad-recipe"));
-                startActivity(browserIntent);
-            }
-        });
-        ImageButton b3 = (ImageButton) view.findViewById(R.id.Recipe3);
-        b3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://dranthonygustin.com/low-carb-vs-keto-ketosis-different-low-carb-diet/"));
-                startActivity(browserIntent);
-            }
-        });
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 }
