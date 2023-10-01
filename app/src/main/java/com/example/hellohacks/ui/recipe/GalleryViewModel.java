@@ -12,12 +12,9 @@ public class GalleryViewModel extends ViewModel {
 
     public GalleryViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Recipes");
+        mText.setValue("Recommended");
     }
 
-    public Button findViewById(int view) {
-        return (Button) findViewById(view);
-    }
 
     public LiveData<String> getText() {
         return mText;
