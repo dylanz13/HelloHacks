@@ -19,16 +19,19 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.055" />
 
     <ScrollView
         android:layout_width="385dp"
-        android:layout_height="611dp"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="119dp">
+        android:layout_height="639dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,7 +82,7 @@
                 android:layout_height="37dp"
                 android:focusable="false"
                 android:gravity="bottom"
-                android:text="Age"
+                android:text="Age:"
                 android:textSize="15sp" />
 
             <EditText
@@ -98,7 +101,7 @@
                 android:layout_height="37dp"
                 android:focusable="false"
                 android:gravity="bottom"
-                android:text="Gender"
+                android:text="Gender:"
                 android:textSize="15sp" />
 
             <EditText
@@ -110,6 +113,62 @@
                 android:hint="M/F/Other"
                 android:inputType="text"
                 android:text="Male" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="132dp"
+                android:layout_height="34dp"
+                android:focusable="false"
+                android:gravity="bottom"
+                android:text="Email:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextText5"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Address"
+                android:inputType="text"
+                android:text="JonWat641@Yahoo.ca" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="134dp"
+                android:layout_height="33dp"
+                android:focusable="false"
+                android:gravity="bottom"
+                android:text="Weight"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextText6"
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="lbs"
+                android:inputType="text"
+                android:text="180" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="140dp"
+                android:layout_height="33dp"
+                android:focusable="false"
+                android:gravity="bottom"
+                android:text="Goal:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTextText7"
+                android:layout_width="362dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="Weight Loss" />
 
         </LinearLayout>
     </ScrollView>

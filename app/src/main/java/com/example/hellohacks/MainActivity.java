@@ -52,18 +52,6 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-    /*
-    ImageButton b1 = (ImageButton) findViewById(R.id.Recipe1);
-
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent in=new Intent(MainActivity.this, ORecipe.class);
-                startActivity(in);
-            }
-        });
-
-     */
 
     }
 
