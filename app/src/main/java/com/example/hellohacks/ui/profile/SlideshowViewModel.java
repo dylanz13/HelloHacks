@@ -1,16 +1,16 @@
-package com.example.hellohacks.ui.gallery;
+package com.example.hellohacks.ui.profile;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class SlideshowViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public SlideshowViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Recipes");
+        mText.setValue("Profile Information");
     }
 
     public LiveData<String> getText() {

@@ -1,9 +1,14 @@
 package com.example.hellohacks;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
+import android.widget.ImageButton;
 
+import com.example.hellohacks.ui.recipe.GalleryFragment;
+import com.example.hellohacks.ui.recipe.ORecipe;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -47,6 +52,19 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+    /*
+    ImageButton b1 = (ImageButton) findViewById(R.id.Recipe1);
+
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in=new Intent(MainActivity.this, ORecipe.class);
+                startActivity(in);
+            }
+        });
+
+     */
+
     }
 
     @Override

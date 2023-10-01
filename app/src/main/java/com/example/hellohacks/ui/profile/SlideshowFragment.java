@@ -1,4 +1,4 @@
-package com.example.hellohacks.ui.slideshow;
+package com.example.hellohacks.ui.profile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -1,4 +1,4 @@
-package com.example.hellohacks.ui.gallery;
+package com.example.hellohacks.ui.recipe;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,7 +13,6 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.hellohacks.databinding.FragmentGalleryBinding;
 
 public class GalleryFragment extends Fragment {
-
     private FragmentGalleryBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -26,6 +25,8 @@ public class GalleryFragment extends Fragment {
 
         final TextView textView = binding.textGallery;
         galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+
         return root;
     }
 
